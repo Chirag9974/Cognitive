@@ -1,0 +1,27 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.pytest_tmp/
+.mypy_cache/
+.venv/
+venv/
+
+# Editor / agent tool state (not part of the project)
+.freebuff/
+
+# Backups written by scripts/backfill_summary.py
+*.bak
+
+# Per-device session history. The aggregate data/session_summary.csv IS
+# committed, so the dashboard works on a fresh clone; these raw files are not,
+# which means old sessions have no detail page until you copy data/ across.
+data/sessions/*.json
+data/reports/*.txt
+data/baselines/*.json
+
+# Model artifacts are deliberately committed so a fresh clone can use the
+# trained model immediately. Refresh them with: python train_predictor.py --compare
+# (un-ignore nothing here; if you prefer to retrain per machine, add:
+#  data/models/*.json and data/models/*.joblib)

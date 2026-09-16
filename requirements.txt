@@ -1,0 +1,22 @@
+# Runtime + test dependencies. Install with:
+#   .venv\Scripts\python.exe -m pip install -r requirements.txt
+#
+# Everything the app *and* its test suite import. A fresh clone needs this step:
+# the virtual environment is deliberately not committed (it is OS- and
+# path-specific), so nothing here is present until you install.
+
+numpy>=1.26
+scikit-learn>=1.4
+joblib>=1.3
+fastapi>=0.110
+uvicorn>=0.29
+
+# Tests. httpx is not pulled in by fastapi's core requirements, but
+# starlette.testclient (and therefore FastAPI's TestClient) imports it, so
+# `python -m pytest` fails without it.
+pytest>=8.0
+httpx>=0.27
+
+# Optional extras — uncomment if you need them.
+# xgboost>=2.0     # ml.py uses it only when importable; boosts the model comparison
+# reportlab>=4.0   # scripts/make_pitch_pdf.py

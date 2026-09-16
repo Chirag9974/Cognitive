@@ -1,0 +1,46 @@
+{
+  "entries": [
+    {
+      "model_name": "random_forest",
+      "model_version": "2.0.0",
+      "feature_schema_version": "2.0",
+      "artifact": "random_forest_v2.joblib",
+      "metrics": {
+        "model_name": "random_forest",
+        "accuracy": 1.0,
+        "log_loss": 0.47540368731961835,
+        "n_train": 13,
+        "n_test": 4
+      },
+      "trained_at": "2026-09-15T13:16:10.393633+00:00"
+    },
+    {
+      "model_name": "random_forest",
+      "model_version": "2.0.0",
+      "feature_schema_version": "2.0",
+      "artifact": "random_forest_v2.joblib",
+      "metrics": {
+        "model_name": "random_forest",
+        "accuracy": 1.0,
+        "log_loss": 0.4754036873196184,
+        "n_train": 13,
+        "n_test": 4
+      },
+      "trained_at": "2026-09-15T13:16:53.450360+00:00"
+    },
+    {
+      "model_name": "logreg",
+      "model_version": "2.0.0",
+      "feature_schema_version": "2.0",
+      "artifact": "logreg_v2.joblib",
+      "metrics": {
+        "model_name": "logreg",
+        "accuracy": 1.0,
+        "log_loss": 0.4322954835074381,
+        "n_train": 12,
+        "n_test": 2
+      },
+      "trained_at": "2026-09-15T13:17:30.536707+00:00"
+    }
+  ]
+}
